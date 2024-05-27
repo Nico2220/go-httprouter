@@ -1,0 +1,6 @@
+.PHONY:audit
+audit:
+	@echo 'Formatting code...'
+	go fmt ./...
+	@echo 'Vetting code...'
+	go vet ./...
